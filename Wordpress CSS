@@ -1,0 +1,306 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+h1 {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: .8em;
+}
+
+h2 {
+	color: #d6d6d6;
+}
+
+h3 {
+	font-weight: 200;
+	font-size: 28px;
+	line-height: 1.4em;
+	color: #dfdfdf;
+}
+
+p {
+	font-size: 24px;
+	color: #a3a3a3;
+}
+
+img {
+	width: 100%;
+}
+
+/*BUTTON*/
+a.button {
+	background-color: rgba(255,255,255,0);
+	outline: none;
+/*template override*/
+	border: 1px solid #000000;
+	border-radius: 28px;
+	padding: 20px 24px;
+	color: #000000;
+	text-align: center;
+	text-transform: lowercase;
+/*template override*/
+	font-size: 16px;
+	font-weight: 200;
+/*template override*/
+	line-height: 1em;
+/*template override*/
+	letter-spacing: 2px;
+/*template override*/
+}
+
+a.button:visited {
+	border: RGB(150,150,150);
+	color: RGB(150,150,150);
+}
+
+a.button:hover {
+	outline: none;
+/*template override*/
+	border: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+a.button:active {
+	outline: none;
+/*template override*/
+	border: 1px solid rgb(0,0,255);
+	background-color: rgba(255,255,255,0);
+	color: rgb(0,0,255);
+}
+
+a.button:focus {
+	outline: none;
+	border: 1px solid rgb(0,0,255);
+	background-color: rgba(255,255,255,0);
+	color: rgb(0,0,255);
+}
+
+/*HEADER*/
+.main-navigation {
+	text-transform: none;
+}
+
+.menu-toggle {
+	border-radius: 20px;
+	border-color: #ffffff;
+}
+
+.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a, .main-navigation a, .main-navigation a:visited {
+	color: #ffffff;
+}
+
+.custom-header {
+	height: 60vh;
+	background-color: #ffffff;
+}
+
+.site-description-wrapper {
+	margin: auto;
+	vertical-align: middle;
+}
+
+.site-description, .site-description a {
+	color: #000000;
+}
+
+/*BODY*/
+.col2-left {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 45%;
+	margin: 0 0 0 5%;
+	right: 10px;
+}
+
+.col2-middle {
+	display: block;
+	position: relative;
+	width: 45%;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+}
+
+.col2-right {
+	display: inline-block;
+	position: relative;
+	float: right;
+	width: 45%;
+	margin: 0 5% 0 0;
+	left: 10px;
+}
+
+/*FOOTER*/
+.widget {
+	color: rbg(0,0,220);
+}
+
+.footer-widgets {
+	background-color: #ffffff;
+	border-top: 1px solid rgb(220,220,220);
+	color: rbg(220,220,220);
+}
+
+.site-info {
+	background-color: #ffffff;
+	font-weight: normal;
+}
+
+/*UNIQUE HOME STUFF*/
+#home-img-1 {
+}
+
+#home-img-2 {
+}
+
+#home-text-2 {
+}
+
+#home-img-3 {
+}
+
+#mod-ticketing {
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 1075px) {
+	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
+		margin: auto;
+		max-width: 1075px;
+	}
+	
+	.site-description-wrapper {
+		max-width: 400px;
+	}
+	
+	#home-text-1 {
+		padding: 4%;
+	}
+	
+	#home-img-1 {
+		top: 8rem;
+	}
+	
+	#home-img-2 {
+		top: 30px;
+	}
+	
+	#home-text-2 {
+		padding: 4%;
+		top: -114px;
+	}
+	
+	#home-img-3 {
+		top: 54px;
+	}
+	
+	#mod-ticketing {
+		height: 320px;
+		transform: translateY(110px);
+	}
+}
+
+@media screen and (min-width:640px) and (max-width: 1074px) {
+	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
+		margin: auto;
+	}
+	
+	h3 {
+		font-size: 24px;
+	}
+	
+	.custom-header, .custom-header-image {
+		height: 40vw;
+		padding-top: 0;
+	}
+	
+	.site-description-wrapper {
+		width: 30vw;
+	}
+	
+	.site-description a, .site-description a:visited {
+		color: #ffffff;
+		font-size: 30px;
+	}
+	
+	#home-img-1 {
+		top: 100px;
+	}
+	
+	#home-img-2 {
+		top: 60px;
+	}
+	
+	#home-text-2 {
+		top: -10px;
+	}
+	
+	#home-img-3 {
+		top: 80px;
+	}
+	
+	#mod-ticketing {
+		height: 320px;
+		transform: translateY(110px);
+	}
+}
+
+@media screen and (max-width:639px) {
+	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
+		margin: auto;
+		width: 100vw;
+	}
+	
+	.custom-header, .custom-header-image {
+		height: 50vw;
+		padding-top: 0 !important;
+	}
+	
+	.site-description-wrapper {
+		width: 60vw;
+		margin: auto;
+		transform: translateY(-30vw);
+	}
+	
+	.custom-logo {
+		margin: 0;
+	}
+	
+	.site-description a, .site-description a:visited {
+		color: #ffffff;
+		font-size: 20px;
+	}
+	
+	.col2-left, .col2-middle, .col2-right {
+		display: block;
+		position: relative;
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 100vw;
+		text-align: center;
+	}
+	
+	.col2-left, .col2-right {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	
+	#home-text-1 {
+		padding: 10px 5% 60px;
+	}
+	
+	#home-text-2 {
+		padding: 60px 5%;
+	}
+	
+	#mod-ticketing {
+		height: 1560px;
+		transform: translateY(60px);
+	}
+}
