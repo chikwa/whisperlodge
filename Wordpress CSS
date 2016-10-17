@@ -23,10 +23,12 @@ h3 {
 p {
 	font-size: 24px;
 	color: #a3a3a3;
+	margin-bottom:0;
 }
 
 img {
 	width: 100%;
+	max-width:100vw;
 }
 
 /*BUTTON*/
@@ -107,30 +109,13 @@ a.button:focus {
 }
 
 /*BODY*/
-.col2-left {
-	display: inline-block;
-	position: relative;
-	float: left;
-	width: 45%;
-	margin: 0 0 0 5%;
-	right: 10px;
-}
-
 .col2-middle {
+	text-align:center;
 	display: block;
 	position: relative;
-	width: 45%;
+	width: 100vw;
 	left: 50%;
 	-webkit-transform: translate(-50%,0);
-}
-
-.col2-right {
-	display: inline-block;
-	position: relative;
-	float: right;
-	width: 45%;
-	margin: 0 5% 0 0;
-	left: 10px;
 }
 
 /*FOOTER*/
@@ -167,6 +152,9 @@ a.button:focus {
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 1075px) {
+	img {
+		100vw;
+	}
 	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
 		margin: auto;
 		max-width: 1075px;
@@ -175,26 +163,27 @@ a.button:focus {
 	.site-description-wrapper {
 		max-width: 400px;
 	}
-	
+
+	.col2-middle {
+	}
+
 	#home-text-1 {
-		padding: 4%;
+		width: 500px;
+		padding: 40px 0px;
 	}
 	
 	#home-img-1 {
-		top: 8rem;
 	}
 	
 	#home-img-2 {
-		top: 30px;
 	}
 	
 	#home-text-2 {
-		padding: 4%;
-		top: -114px;
+		width:500px;
+		padding: 40px 0px;
 	}
 	
 	#home-img-3 {
-		top: 54px;
 	}
 	
 	#mod-ticketing {
@@ -204,12 +193,15 @@ a.button:focus {
 }
 
 @media screen and (min-width:640px) and (max-width: 1074px) {
-	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
-		margin: auto;
+	img {
+		100vw;
 	}
-	
+
 	h3 {
 		font-size: 24px;
+	}
+	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
+		margin: auto;
 	}
 	
 	.custom-header, .custom-header-image {
@@ -226,20 +218,24 @@ a.button:focus {
 		font-size: 30px;
 	}
 	
+		.col2-middle {
+	}
+
+	#home-text-1 {
+		padding: 40px 10vw;
+	}
+
 	#home-img-1 {
-		top: 100px;
 	}
 	
 	#home-img-2 {
-		top: 60px;
 	}
 	
 	#home-text-2 {
-		top: -10px;
+		padding: 40px 10vw;
 	}
 	
 	#home-img-3 {
-		top: 80px;
 	}
 	
 	#mod-ticketing {
@@ -249,6 +245,9 @@ a.button:focus {
 }
 
 @media screen and (max-width:639px) {
+	img {
+		100vw;
+	}
 	.affinity-front-page .site-content .entry-header, .affinity-front-page .site-content .entry-content, .affinity-front-page .site-content .entry-footer {
 		margin: auto;
 		width: 100vw;
@@ -274,29 +273,13 @@ a.button:focus {
 		font-size: 20px;
 	}
 	
-	.col2-left, .col2-middle, .col2-right {
-		display: block;
-		position: relative;
-		float: left;
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		text-align: center;
-	}
-	
-	.col2-left, .col2-right {
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+	.col2-middle {
 	}
 	
 	#home-text-1 {
-		padding: 10px 5% 60px;
 	}
 	
 	#home-text-2 {
-		padding: 60px 5%;
 	}
 	
 	#mod-ticketing {
